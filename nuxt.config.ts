@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   // 在client端只能看到public
   runtimeConfig: {
     count: 0,
+    isServe: true,
 
     // 在client可以看到的变量
     public: {
@@ -14,5 +15,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@element-plus/nuxt"]
+  modules: ["@element-plus/nuxt"],
 });

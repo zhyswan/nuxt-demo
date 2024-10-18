@@ -1,5 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      title: "Next Config app-head-title title",
+      bodyAttrs: {
+        class: "body",
+      }
+    },
+  },
   devtools: { enabled: true },
   css: ["@/assets/styles/scrollbar.css", "@/assets/styles/base.css"],
 

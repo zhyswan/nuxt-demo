@@ -4,4 +4,15 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+definePageMeta({
+  // title: "关于",
+  middleware: [
+    // "auth",
+    (to, from) => {
+      console.log("about middleware to:", to);
+      console.log("about middleware from:", from);
+    },
+  ],
+});
+</script>
